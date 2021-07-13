@@ -1,3 +1,6 @@
+CHECK THE PDF FILE FOR DETAILED PROBLEM DESCRIPTION.
+
+
 This program allows us to create public and private key pairs of users listed in a text file and then provide various email security features for exchange of email messages between the users.
 -------------------------------------------------CreateKeys------------------------------------
 You can create public and private key pairs for a list of users using the following command
