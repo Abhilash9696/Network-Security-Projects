@@ -1,3 +1,5 @@
+
+
 This program allows us to create public and private key pairs of users listed in a text file and then provide various email security features for exchange of email messages between the users.
 -------------------------------------------------CreateKeys------------------------------------
 You can create public and private key pairs for a list of users using the following command
@@ -63,6 +65,8 @@ py Lab2-cs20m006.py CreateMail COAI Abhilash Anil EmailInputFile.txt EmailOutput
 
 py Lab2-cs20m006.py ReadMail COAI Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 des-ede3-cbc 2048
 
+
+Note : READ ASSIGNMENT2.PDF for detailed desription.
 
 
 
