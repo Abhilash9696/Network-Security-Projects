@@ -12,3 +12,5 @@ YOu can execute the file with below command:
 "lab5-fw rf1.txt pf1.txt"
 ---------------------------------------
 As far as I know, it seems to work fine for all the test cases I could think of.
+
+NOTE: Read pdf for detailed description of how the code is intended to work and what the code is achieving.
