@@ -1,0 +1,133 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210627182827
+Username: DESKTOP-PHI6DQM\abhik
+RunAs User: DESKTOP-PHI6DQM\abhik
+Configuration Name: 
+Machine: DESKTOP-PHI6DQM (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4416
+PSVersion: 5.1.19041.1023
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1023
+BuildVersion: 10.0.19041.1023
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\abhik\Documents\PowerShell_transcript.DESKTOP-PHI6DQM.ws6PrPgI.20210627182827.txt
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail CONF Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 aes-256-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail CONF Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 aes-256-cbc 2048
+Decrypted!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail CONF Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 des-ede3-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail CONF Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 des-ede3-cbc 2048
+Decrypted!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail CONF Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 aes-256-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail CONF Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 aes-256-cbc 2048
+Decrypted!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail CONF Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 des-ede3-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail CONF Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 des-256-cbc 2048
+Traceback (most recent call last):
+  File "D:\IITM\NS-6500\Lab2-cs20m006\Lab2-cs20m006.py", line 366, in <module>
+    only_conf_DEC(sys.argv[3], sys.argv[4],sys.argv[5],sys.argv[6], t, keylen)
+  File "D:\IITM\NS-6500\Lab2-cs20m006\Lab2-cs20m006.py", line 179, in only_conf_DEC
+    dec = decryptor.update(mm) + decryptor.finalize()
+  File "C:\Users\abhik\AppData\Local\Programs\Python\Python39\lib\site-packages\cryptography\hazmat\primitives\ciphers\b
+ase.py", line 148, in finalize
+    data = self._ctx.finalize()
+  File "C:\Users\abhik\AppData\Local\Programs\Python\Python39\lib\site-packages\cryptography\hazmat\backends\openssl\cip
+hers.py", line 180, in finalize
+    raise ValueError(
+ValueError: The length of the provided data is not a multiple of the block length.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail CONF Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 des-ede3-cbc 2048
+Decrypted!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail AUIN Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 aes-256-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 aes-256-cbc 2048
+
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail AUIN Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 des-ede3-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 des-ede3-cbc 2048
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail AUIN Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 aes-256-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 aes-256-cbc 2048
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> 
+py Lab2-cs20m006.py CreateMail AUIN Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 des-ede3-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 des-ede3-cbc 2048
+
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail COAI Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 aes-256-cbc 2048
+Successful! Output file is generated.
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail COAI Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 aes-256-cbc 2048
+Decrypted!
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail COAI Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 des-ede3-cbc 2048
+Successful! Output file is generated.
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail COAI Abhilash Anil .\EmailInputFile.txt EmailOutputFile.txt  sha512 des-ede3-cbc 2048
+Traceback (most recent call last):
+  File "D:\IITM\NS-6500\Lab2-cs20m006\Lab2-cs20m006.py", line 387, in <module>
+    COAI_DEC(sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], t, hashtype, keylen)
+  File "D:\IITM\NS-6500\Lab2-cs20m006\Lab2-cs20m006.py", line 312, in COAI_DEC
+    only_conf_DEC(sender, receiver, inpfile, 'tempout1.txt', symEncType, keylen)
+  File "D:\IITM\NS-6500\Lab2-cs20m006\Lab2-cs20m006.py", line 199, in only_conf_DEC
+    plaintext = private_key.decrypt(mpk,
+  File "C:\Users\abhik\AppData\Local\Programs\Python\Python39\lib\site-packages\cryptography\hazmat\backends\openssl\rsa
+.py", line 422, in decrypt
+    raise ValueError("Ciphertext length must be equal to key size.")
+ValueError: Ciphertext length must be equal to key size.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail COAI Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 des-ede3-cbc 2048
+Decrypted!
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail COAI Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 aes-256-cbc 2048
+Successful! Output file is generated.
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail COAI Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 aes-256-cbc 2048
+Decrypted!
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail COAI Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha3-512 des-ede3-cbc 2048
+Successful! Output file is generated.
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> 
+py Lab2-cs20m006.py ReadMail COAI Abhilash Anil EmailOutputFile.txt Plaintext.txt sha3-512 des-ede3-cbc 2048
+Decrypted!
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py CreateMail AUIN Abhilash Anil EmailInputFile.txt EmailOutputFile.txt sha512 aes-256-cbc 2048
+Successful! Output file is generated.
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil EmailOutputFile.txt Plaintext.txt sha512 aes-256-cbc 2048
+Signature valid!
+PS D:\IITM\NS-6500\Lab2-cs20m006> py Lab2-cs20m006.py ReadMail AUIN Abhilash Anil .\EmailInputFile.txt EmailOutputFile.txt sha512 aes-256-cbc 2048
+signature not valid
+PS D:\IITM\NS-6500\Lab2-cs20m006> Exit-Transcript
+Exit-Transcript : The term 'Exit-Transcript' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ Exit-Transcript
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Exit-Transcript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Exit-Transcript : The term 'Exit-Transcript' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ Exit-Transcript
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Exit-Transcript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\IITM\NS-6500\Lab2-cs20m006> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20210627183905
+**********************
